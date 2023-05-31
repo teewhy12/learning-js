@@ -31,81 +31,176 @@
 // JS DATA TYPES { Primitive, complex}
 // Strings - text - quotes - strings
 
-const firstName = "John";
-const lastName = "Doe";
-const middleName = "0wen";
-const currentJob = "Product Manager";
-const email = "eventbyteewhyy@gmail.com";
-// String concatenation - joining of strings +
+// const firstName = "John";
+// const lastName = "Doe";
+// const middleName = "0wen";
+// const currentJob = "Product Manager";
+// const email = "eventbyteewhyy@gmail.com";
+// // String concatenation - joining of strings +
 
-const fullName = firstName + " " + middleName + " " + lastName;
-console.log(fullName);
-// My name is John and i work as a product manager
-const description ="My name is" + firstName + "I work as a " + currentJob;
+// const fullName = firstName + " " + middleName + " " + lastName;
+// console.log(fullName);
+// // My name is John and i work as a product manager
+// // const description ="My name is" + firstName + "I work as a " + currentJob;
+// // console.log(description);
+
+// const emaill = "You can send me on this email, " + firstName + "mubarak@ts.com" + email;
+// console.log(email);
+// // Getting characters - strings {position}
+// console.log(firstName[2]);
+// console.log(currentJob[8]);
+// // string length 
+// console.log(firstName.length);
+// console.log(description.length);
+
+// // string methods 
+// // transform - TOYOSI
+// console.log(fullName.toUpperCase());
+// console.log(fullName.toLocaleLowerCase());
+// console.log(fullName.toUpperCase());
+// console.log(fullName.toLocaleLowerCase());
+
+// // extracting parts of a string - slice substrings
+
+// const email2 = "mubarak@techstudioacademy.com";
+// // string.slice [0,7]
+// console.log(email2.slice(0, 8));
+// console.log(email2.slice(5, 12));
+// console.log(email2.slice(-5, -1));
+// console.log(email2.slice(0, 8));
+
+// //string.substrings= (start, count of cters)
+// console.log(email2.substr(0, 12));
+
+// // replace string content - replace replaceA11
+// console.log(email2.replace("mubarak", "funsho"));
+// console.log(email2.replaceAll("a", "$"));
+
+// //includes, indexof, lastIndexOf, trim, concat, 
+// console.log(email2.includes("@"));
+// console.log(email.indexOf("a"));
+// console.log(email2.lastIndexOf("a"));
+// const user = "      Mubarak          ";
+// const password = "   400000073647999     "
+// console.log(user.length, password.length);
+
+// const formattedUser = user.trim();
+// const formattedPassword = password.trimStart();
+// console.log(formattedUser.length);
+// console.log(formattedPassword.length);
+
+// console.log(email2.startsWith("m"));
+// console.log(email2.endsWith(".com"));
+// // trimStart, Trimend, startsWith, EndsWith
+
+// const job = "Frontend";
+// // frontend developer
+// console.log(job.concat(" ", "Developer", "is Rare"));
+// template literals
+// const author = "Chinua Achebe";
+// const book = "Things Fall Apart";
+// const year = 1996;
+// // The book Things fall apart was written by chinua Achebe in the year 1996
+// const bookDescription = " The book " + book + " was wriiten by " + author + " in the year " + year;
+// console.log(bookDescription);
+
+// // template literals
+// const bookDescription2 = `The book ${book} was written by ${author} in the year ${year}`;
+// console.log(firstName.toUpperCase());
+// console.log(firstName.toLocaleLowerCase());
+// console.log(firstName.to);
+
+console.log();
+// Numbers - 5 6.3 45000
+let total = 50;
+// increas the valur 
+
+console.log(total);
+let post = 40;
+post += 15;
+post -= 15;
+post *= 2;
+post /=5;
+
+console.log(post);
+
+let likes = 0;
+likes += 1;
+likes += 1;
+likes += 1;
+likes -= 1;
+likes++;
+likes--;
+likes++
+likes--;
+
+console.log(likes);
+const discount = 0.1
+
+// let total = total + 10
+
+// NaN - not a number 
+
+console.log(5 ** "hello"); //NaN
+
+
+
+
+
+// increase the val 
+// Boolean - true and false 
+console.log(true);
+console.log(false);
+
+
+const country = 'Nigeria';
+const continent = 'Ogun';
+let population = 360000;
+
+console.log(country, continent, population);
+const isIsland = false 
+const language = "English";
+
+console.log(population / 2);
+
+
+// const description = `${country} is in ${continent} and its population of ${population}`
+// console.log(description);
+
+const description = `${country} as a country speak majorly ${language}`;
 console.log(description);
 
-const emaill = "You can send me on this email, " + firstName + "mubarak@ts.com" + email;
-console.log(email);
-// Getting characters - strings {position}
-console.log(firstName[2]);
-console.log(currentJob[8]);
-// string length 
-console.log(firstName.length);
-console.log(description.length);
+// boolean true or flase 
 
-// string methods 
-// transform - TOYOSI
-console.log(fullName.toUpperCase());
-console.log(fullName.toLocaleLowerCase());
+// comparison operators - < > <= >= ==
+console.log(6 > 3); // true
+console.log(6 < 3); // false
+console.log(5 >= 5.0); // true
 
-// extracting parts of a string - slice substrings
+// logical operators (and, or, not)
+// and = &&
+// or = ||
+// not = ! 
+console.log(5 > 6 && 2 == 2);
+console.log(6 > 7 || 2 === 2 );
 
-const email2 = "mubarak@techstudioacademy.com";
-// string.slice [0,7]
-console.log(email2.slice(0, 8));
-console.log(email2.slice(5, 12));
-console.log(email2.slice(-5, -1));
-console.log(email2.slice(0, 8));
+// typeof
+console.log(typeof 5); // number
+// type conversion and type coercion
 
-//string.substrings= (start, count of cters)
-console.log(email2.substr(0, 12));
+// string to numbers
 
-// replace string content - replace replaceA11
-console.log(email2.replace("mubarak", "funsho"));
-console.log(email2.replaceAll("a", "$"));
+const str = "10";
+console.log(typeof str);
+const converted = Number(str);
+console.log(typeof converted);
 
-//includes, indexof, lastIndexOf, trim, concat, 
-console.log(email2.includes("@"));
-console.log(email.indexOf("a"));
-console.log(email2.lastIndexOf("a"));
-const user = "      Mubarak          ";
-const password = "   400000073647999     "
-console.log(user.length, password.length);
+// numbers to strings
+const num = 900000;
+console.log(typeof num);
+const converted2 = String(num);
 
-const formattedUser = user.trim();
-const formattedPassword = password.trimStart();
-console.log(formattedUser.length);
-console.log(formattedPassword.length);
+// type of corecion
 
-console.log(email2.startsWith("m"));
-console.log(email2.endsWith(".com"));
-// trimStart, Trimend, startsWith, EndsWith
-
-const job = "Frontend";
-// frontend developer
-console.log(job.concat(" ", "Developer", "is Rare"));
-// template literals
-const author = "Chinua Achebe";
-const book = "Things Fall Apart";
-const year = 1996;
-// The book Things fall apart was written by chinua Achebe in the year 1996
-const bookDescription = " The book " + book + " was wriiten by " + author + " in the year " + year;
-console.log(bookDescription);
-
-// template literals
-const bookDescription2 = `The book ${book} was written by ${author} in the year ${year}`;
-
-// Numbers - 5 6.3 45000
-// Boolean - true and false 
 // Null - null
 // Undefined - undefined
