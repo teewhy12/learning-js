@@ -110,97 +110,245 @@
 // console.log(firstName.toLocaleLowerCase());
 // console.log(firstName.to);
 
-console.log();
-// Numbers - 5 6.3 45000
-let total = 50;
-// increas the valur 
+// console.log();
+// // Numbers - 5 6.3 45000
+// let total = 50;
+// // increas the valur 
 
-console.log(total);
-let post = 40;
-post += 15;
-post -= 15;
-post *= 2;
-post /=5;
+// console.log(total);
+// let post = 40;
+// post += 15;
+// post -= 15;
+// post *= 2;
+// post /=5;
 
-console.log(post);
+// console.log(post);
 
-let likes = 0;
-likes += 1;
-likes += 1;
-likes += 1;
-likes -= 1;
-likes++;
-likes--;
-likes++
-likes--;
+// let likes = 0;
+// likes += 1;
+// likes += 1;
+// likes += 1;
+// likes -= 1;
+// likes++;
+// likes--;
+// likes++
+// likes--;
 
-console.log(likes);
-const discount = 0.1
+// console.log(likes);
+// const discount = 0.1
 
-// let total = total + 10
+// // let total = total + 10
 
-// NaN - not a number 
+// // NaN - not a number 
 
-console.log(5 ** "hello"); //NaN
+// console.log(5 ** "hello"); //NaN
 
+// // increase the val 
+// // Boolean - true and false 
+// console.log(true);
+// console.log(false);
+// const country = 'Nigeria';
+// const continent = 'Ogun';
+// let population = 360000;
 
+// console.log(country, continent, population);
+// const isIsland = false 
+// const language = "English";
 
+// console.log(population / 2);
+// // const description = `${country} is in ${continent} and its population of ${population}`
+// // console.log(description);
 
-
-// increase the val 
-// Boolean - true and false 
-console.log(true);
-console.log(false);
-
-
-const country = 'Nigeria';
-const continent = 'Ogun';
-let population = 360000;
-
-console.log(country, continent, population);
-const isIsland = false 
-const language = "English";
-
-console.log(population / 2);
-
-
-// const description = `${country} is in ${continent} and its population of ${population}`
+// const description = `${country} as a country speak majorly ${language}`;
 // console.log(description);
 
-const description = `${country} as a country speak majorly ${language}`;
-console.log(description);
+// // boolean true or flase 
 
-// boolean true or flase 
+// // comparison operators - < > <= >= ==
+// console.log(6 > 3); // true
+// console.log(6 < 3); // false
+// console.log(5 >= 5.0); // true
 
-// comparison operators - < > <= >= ==
-console.log(6 > 3); // true
-console.log(6 < 3); // false
-console.log(5 >= 5.0); // true
+// // logical operators (and, or, not)
+// // and = &&
+// // or = ||
+// // not = ! 
+// console.log(5 > 6 && 2 == 2);
+// console.log(6 > 7 || 2 === 2 );
 
-// logical operators (and, or, not)
-// and = &&
-// or = ||
-// not = ! 
-console.log(5 > 6 && 2 == 2);
-console.log(6 > 7 || 2 === 2 );
+// // typeof
+// console.log(typeof 5); // number
+// // type conversion and type coercion
 
-// typeof
-console.log(typeof 5); // number
-// type conversion and type coercion
+// // string to numbers
 
-// string to numbers
+// const str = "10";
+// console.log(typeof str);
+// const converted = Number(str);
+// console.log(typeof converted);
 
-const str = "10";
-console.log(typeof str);
-const converted = Number(str);
-console.log(typeof converted);
+// // numbers to strings
+// const num = 900000;
+// console.log(typeof num);
+// const converted2 = String(num);
 
-// numbers to strings
-const num = 900000;
-console.log(typeof num);
-const converted2 = String(num);
+// // type of corecion
 
-// type of corecion
+// // Null - null
+// let age = null;
+// console.log(age, age + 4, `my age is $(age)`);
 
-// Null - null
-// Undefined - undefined
+// // Undefined - undefined
+let year;
+console.log(year);
+console.log(year, year + 4, `the year is $(year)`);
+
+// // truthy
+console.log(Boolean(""));
+// falsy values 0, null, undefined
+
+//control flow
+// conditional statement
+// if(condition){code}
+// const password = "219jtngng@";
+// if (password.length > 6) {
+//     console.log("Your password is strong");
+// }
+if (false) {
+    console.log("Working");
+}
+
+//if else
+// if(condition){}
+// CODE 1
+//}else{
+//code 2
+//
+
+// if (password.length > 6 && password.includes("@")) {
+//     console.log("Your password is strong");
+// } else {
+//     console.log("Your password is weak");
+// }
+if (true && true && true) {
+    console.log("Here");
+}
+const country = "Ireland";
+const continent = "Newland";
+const population = 12;
+const isIsland = false;
+const language = "French";
+
+//sarah speaks english has less than 50 people and is not an island 
+// You should live in portugal
+// Portugal does not meet your criteria
+
+if (language === "English" && population < 50 && !isIsland) {
+    console.log(`You should live in ${country}`);
+} else {
+    console.log(`${country} does not meet your criteria`);
+}
+const age = 18;
+// >=18
+
+if (age >= 18) {
+    console.log("You are an adult");
+} else {
+    console.log("You are not one");
+}
+
+// if (condition)else if (another condition)else if(condition){}else{}
+
+const password = "456u"
+// recommended >7 an include @, strong > 7 and weak
+
+if (password.length >= 7 && password.includes("@")) {
+    console.log("Your password is recommended");
+} else if ( password.length >= 7) {
+    console.log("Your password is strong");
+} else {
+    console.log("Your password is weak");
+}
+const numb = 7
+if (numb > 0){
+    console.log('A positive Number');
+}else if (numb < 0){
+    console.log('A negative Number');
+}else{
+    console.log('This is Zero');
+}
+// even or odd numbers
+if  (numb % 2 === 0) { 
+    console.log("This is EVEN");
+} else {
+    console.log("This is ODD");
+}
+
+const club = 50;
+
+ if (club > 18) {
+     console.log("Welcome to baby section");
+ } else if ("club > 50") {
+    console.log("Welcome to VIP SECTION");
+ } else {
+    console.log("Welcome to the Club");
+ }
+
+ // SWITCH STATEMENT
+ const day = 67;
+ switch (day) {
+    case 1:
+        console.log("MONDAY");
+        break;
+    case 2:
+        console.log("TUESDAY");
+        break;
+    case 3:
+        console.log("WED");
+        break;
+    case 4:
+        console.log("THURSDAY");
+        break;
+    case 5:
+        console.log("FRIDAY");
+        break;
+    case 6:
+        console.log("SATURDAY");
+        break;
+    case 7:
+        console.log("SUNDAY");
+        break;
+
+    default:
+        console.log("NOT A VALID DAY");
+        break;
+ }
+ 
+ const grade = "a"
+ switch (grade) {
+    case "A":
+    case "a":
+        console.log("EXCLLENT");
+        break;
+    case "B":
+    case "b":
+        console.log("VERY GOOD");
+        break;
+    case "C":
+    case "c":
+        console.log("GOOD");
+        break;
+    case "D":
+    case "d":
+        console.log("FAIR");
+        break;
+    case "E":
+        console.log("POOR");
+        break;
+    case "F":
+        console.log("FAIL");
+        break;
+    default:
+        console.log("NOT A VALID GRADE");
+        break;
+ }
