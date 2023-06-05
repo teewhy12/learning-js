@@ -350,5 +350,169 @@ const club = 50;
         break;
     default:
         console.log("NOT A VALID GRADE");
-        break;
+        break; 
  }
+// bmi = mass / height ** 2
+const marksHeight = 1.69;
+const marksWeight = 78;
+const johnsHeight = 1.95;
+const johnsWeight = 92;
+
+const marksBmi = marksWeight / marksHeight ** 2;
+const johnsBmi = johnsWeight / johnsHeight ** 2;
+console.log(marksBmi > johnsBmi);
+if (marksBmi > johnsBmi) {
+    console.log(`Marks's BMI ${marksBmi} is higher than john's ${johnsBmi}`);
+} else { 
+    console.log(`John's BMI ${johnsBmi} is higher than Mark's ${marksBmi}`);
+}
+
+const avgDolphin = (96 + 108 + 89) / 3
+
+// console.log((2 + 2 + 2) / 3);
+ // console.log(2 + 2 + 2 / 3);
+
+ const avgKaola = (88 + 91 + 110) / 3;
+ console.log(avgDolphin, avgKaola);
+ if (avgDolphin > avgKaola) {
+    console.log("Team Dolphin Wins ");
+ } else if (avgKaola > avgDolphin) {
+    console.log("Team Kaola wins");
+ } else {
+    console.log("This is a Draw");
+ }
+
+ // ternary operator 
+//if(condition){code 1}else{code 2}
+
+// condition ? action 1 : action 2
+
+// 15 > 7 ? console.log("Yes") : console.log("NO");
+
+// const num2 = 46;
+
+// num2 % 2 === 0
+// ? console.log("This is an EVEN number")
+// : console.log("This is an ODD number");
+
+
+ // LOOPS - repitive tasks - for , while, do.. while loop
+
+ // for (initializer let i = 0; condition i < 5; increment i++ ){code}
+
+//  for (let i = 0; i < 5; i++) {
+//     console.log(`In the loop ${i}`);
+//  }
+//  console.log("outside of the loop");
+
+ // initializer
+ //while(condition){code increment}
+
+ // sum of 
+//  let sum = 0;
+//  for (i = 0; i <= 5; i++) {
+//     sum += i;
+//  }
+// functions 
+const var1 = "John";
+
+// function declaration 
+function myfunction() {
+    console.log("HELLO CLASS");
+    console.log("YOU ARE WELCOME");
+}
+myfunction();
+
+function greet(name) {
+    console.log(Welcome + name);
+}
+greet("John");
+greet("Sandra");
+greet("EMMANUEL");
+greet();
+
+// calculate the age of users
+// 2023 - year
+
+function calcAge(year) {
+    const age = 2023 - year;
+    console.log(`Your age is ${age}`);
+}
+calcAge(1960);
+calcAge(2000);
+
+function sumNums(a, b) {
+    console.log(`the sum of ${a} and ${b} is ${a + b}`);
+}
+sumNums(4.5, 78);
+sumNums(-45,87);
+
+//Finland has 6 million people and its capital city is helsinki 
+function describeCountry(country, population, capitalCity) {
+
+}
+describeCountry('Togo', 12, "Paris");
+describeCountry("Belgium", 3, "Brussels");
+describeCountry("Russia", 65, "Moscow");
+
+
+// check if an email is valid or not
+function checkEmail(email) {
+    if (email.includes("@")) {
+        console.log(`${email} is a valid email address`);
+    } else { 
+        console.log(`${email} is not a valid email`);
+    }
+}
+checkEmail("abcgoogle.com");
+
+// HOSTING - 
+// function expression \
+const myfunction2 = function () {
+    console.log("Functiion expression");
+    console.log(a + b);
+};
+
+myfunction2(7 + 8);
+
+// return keyword
+
+const toyosi = function (a, b) {
+    // console.log("hello")
+    return a * b;
+    // console.log("hello")
+};
+toyosi(9, 6);
+
+const test = toyosi(10, 10);
+console.log(test);
+
+//create a function that calc average of the two teams 
+// d - 103. 98, 89
+// k - 110, 87, 95
+
+const calcAverage = function (a, b, c) {
+    const avg = (a + b + c) / 3;
+    // return avg.tofixed(2);
+    return Number(avg.toFixed(2));
+};
+
+const avgDolphin2 = calcAverage(123,98, 89);
+const avgKaola2 = calcAverage(110, 87, 95);
+console.log(avgDolphin2, avgKaola2);
+
+function checkWinner(teamA, teamB){
+    if (teamA > teamB) {
+        console.log("First Team won");
+    } else if (teamB > teamA) {
+        console.log("Second Team won");
+    } else {
+        console.log("NO winner");
+    }
+}
+// arrays
+// object
+// asybchronous js
+// DOM
+
+
