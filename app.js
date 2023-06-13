@@ -809,93 +809,93 @@ if (false) {
 
 // accumulator 
 
-const movement = [300, -50, 700, 400, -300];
-const total = movement.reduce((acc, val) => {
-    return acc + val;
-}, 0);
+// const movement = [300, -50, 700, 400, -300];
+// const total = movement.reduce((acc, val) => {
+//     return acc + val;
+// }, 0);
 
-console.log(`Your Total bill is ${total}`);
+// console.log(`Your Total bill is ${total}`);
 
-const user = {
-    firstName: 'Toyosi',
-    lastName: 'Ife',
-    age: 80,
-    job: 'Software Developer',
-    family: 'Sisters',
-}
-console.log(user);
+// const user = {
+//     firstName: 'Toyosi',
+//     lastName: 'Ife',
+//     age: 80,
+//     job: 'Software Developer',
+//     family: 'Sisters',
+// }
+// console.log(user);
 
-// ACCESS properies from an object
-// dot notation, bracket
+// // ACCESS properies from an object
+// // dot notation, bracket
 
-console.log(user.family.toUpperCase());
-console.log(user.age);
+// console.log(user.family.toUpperCase());
+// console.log(user.age);
 
-// objName["propertyName"]
-console.log(user["family"]);
-const namekey = "Name";
-console.log(user["last" + namekey]);
+// // objName["propertyName"]
+// console.log(user["family"]);
+// const namekey = "Name";
+// console.log(user["last" + namekey]);
 
-// adding properties to an object
-user.hasAcar = true;
-user.status = "Married";
-console.log(user);
+// // adding properties to an object
+// user.hasAcar = true;
+// user.status = "Married";
+// console.log(user);
 
-//remove properties 
+// //remove properties 
 
-// delete
-delete user.job;
-console.log(user);
+// // delete
+// delete user.job;
+// console.log(user);
 
-const book = {
-    title: 'Rich Dad Poor Dad',
-    author: 'Robert Kiyosaki',
-    year: 2001,
-    pages: 207,
-    similarBooks: ["Richest Man in Babtlon", "The Monk who sold his Ferrari", "Think and Grow Rich", ],
+// const book = {
+//     title: 'Rich Dad Poor Dad',
+//     author: 'Robert Kiyosaki',
+//     year: 2001,
+//     pages: 207,
+//     similarBooks: ["Richest Man in Babtlon", "The Monk who sold his Ferrari", "Think and Grow Rich", ],
 
-publisher: "Macmillan",
-getSummary: function () {
-    return `The title of the book is ${this.title} written by ${this.author} in the ${this.year}`
-    // the titlr is rich poor dad by robert in the year 2001
+// publisher: "Macmillan",
+// getSummary: function () {
+//     return `The title of the book is ${this.title} written by ${this.author} in the ${this.year}`
+//     // the titlr is rich poor dad by robert in the year 2001
 
-    // console.log("This is book summary")
-},
-};
-console.log(book);
-// object methods
+//     // console.log("This is book summary")
+// },
+// };
+// console.log(book);
+// // object methods
 
-book.getSummary();
+// book.getSummary();
 
 
-console.log(this);
-// object destructuring 
-// const {properNames} = pbjuName
-// publiser, author, year
+// console.log(this);
+// // object destructuring 
+// // const {properNames} = pbjuName
+// // publiser, author, year
 
-// const { publisher, author, pages, year1 } = book;
-// console.log(publisher);
+// // const { publisher, author, pages, year1 } = book;
+// // console.log(publisher);
 
-//this
-const person = {
-    name: "Toyosi"
+// //this
+// const person = {
+//     name: "Toyosi"
 
-}
-/// COMPLETE
+// }
+// /// COMPLETE
 
-const { publisher, title, ...all } = book;
-console.log(all);
+// const { publisher, title, ...all } = book;
+// console.log(all);
 
-const ages = [32, 54, 16, 65, 89];
-const newAge = [2, ...ages, 76, 80]
-console.log(newAge);
+// const ages = [32, 54, 16, 65, 89];
+// const newAge = [2, ...ages, 76, 80]
+// console.log(newAge);
 
-// const [varNames] = arrName
+// // const [varNames] = arrName
 
-const [...rest] = ages;
-// console.log(h)
+// const [...rest] = ages;
+// // console.log(h)
 
-console.log(rest);
+// console.log(rest);
 
 // MATH OBJECT - 8 math constants
 // console.log(Math.PI);
@@ -903,62 +903,62 @@ console.log(rest);
 // math methods
 // sqrt, trunc, round, random, ceil, floor
 
-console.log(Math.sqrt(25));
-console.log(Math.trunc(9.789));
+// console.log(Math.sqrt(25));
+// console.log(Math.trunc(9.789));
 
-// 5
+// // 5
 
-console.log(Math.round(7.34)); // 7
-console.log(Math.round(0.23));
-console.log(Math.round(67.98));
-console.log(Math.round(2.56));
-console.log(Math.round(-2.5));
+// console.log(Math.round(7.34)); // 7
+// console.log(Math.round(0.23));
+// console.log(Math.round(67.98));
+// console.log(Math.round(2.56));
+// console.log(Math.round(-2.5));
 
-// Ceil
-console.log(Math.ceil(10.1));
-console.log(Math.ceil(70.2));
+// // Ceil
+// console.log(Math.ceil(10.1));
+// console.log(Math.ceil(70.2));
 
-// Floor
-console.log(Math.floor(6.7));
+// // Floor
+// console.log(Math.floor(6.7));
 
-// Random 
-console.log(Math.random() * 2 + 1);  // 0 1 2 3 4 5
-console.log(Math.trunc(Math.random() * 6));
+// // Random 
+// console.log(Math.random() * 2 + 1);  // 0 1 2 3 4 5
+// console.log(Math.trunc(Math.random() * 6));
 
-const computer = ["rock", "paper", "scissors"];
-// console.log(computer[2]);
+// const computer = ["rock", "paper", "scissors"];
+// // console.log(computer[2]);
 
 
-const randomNum = Math.trunc(Math.random() * 3);
-const randomChoice = computer[randomNum];
-// console.log(computerChoice);
+// const randomNum = Math.trunc(Math.random() * 3);
+// const randomChoice = computer[randomNum];
+// // console.log(computerChoice);
 
-const playerChoice = prompt ("Enter a choice (rock, paper, scissors): ");
+// const playerChoice = prompt ("Enter a choice (rock, paper, scissors): ");
 
-const checkWin = function (computer, player) {
-    if (computer === player) {
-        return "This is a tie"
-    } else if (player === "rock") {
-        if (computer === "scissors") {
-            return "Rock smashes scissors, You win! ";
-        } else {
-            return "Paper covers rock, You Lose";
-        }
-    } else if (player === "paper") {
-        if (computer === "rock") {
-            return "Rock smashes scissors, You win! ";
-        } else {
-            return "Scissors cuts paper! You Lose";
-        }
+// const checkWin = function (computer, player) {
+//     if (computer === player) {
+//         return "This is a tie"
+//     } else if (player === "rock") {
+//         if (computer === "scissors") {
+//             return "Rock smashes scissors, You win! ";
+//         } else {
+//             return "Paper covers rock, You Lose";
+//         }
+//     } else if (player === "paper") {
+//         if (computer === "rock") {
+//             return "Rock smashes scissors, You win! ";
+//         } else {
+//             return "Scissors cuts paper! You Lose";
+//         }
         
-    } else if (player === "scissors") {
-        if (computer === "paper") {
-            return "Scissors cut paper, You win!";
-        } else {
-            return "Rock smashes scissors, You Lose!";
-        }
-    }
-};
+//     } else if (player === "scissors") {
+//         if (computer === "paper") {
+//             return "Scissors cut paper, You win!";
+//         } else {
+//             return "Rock smashes scissors, You Lose!";
+//         }
+//     }
+// };
 
 
 // const result = checkWin(computerChoice, playerChoice);
@@ -973,4 +973,99 @@ const checkWin = function (computer, player) {
 // asybchronous js
 // DOM
 
+//consol.log("Third");
+// non-blocking code
 
+console.log("A");
+console.log("B");
+console.log("C");
+setTimeout(() => {
+    console.log("IN THE TIMEOUT");
+}, 5000);
+
+console.log("C after thr timeout");
+
+const myInterval = setInterval(() => {
+    console.log("Welcome user");
+}, 3000);
+
+setTimeout(() => {
+    clearInterval(myInterval);
+}, 15000);
+
+//FETCHING DATA - API means Application programming interface
+// JSON means Javascript object notation
+
+const url = "https://jsonplaceholder.typicode.com/users"
+
+//fetch
+fetch(url).then((Response) => {
+    return Response.json();
+})
+.then((data) => {
+    console.log(data);
+});
+
+
+const fetchData = (site) => {
+    fetch(site)
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+};
+fetchData(url);
+fetchData("https://jsonplaceholder.typicode.com/posts");
+
+const fetchDataa = (site) => {
+    fetch(site)
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch((err) => {
+        console.log(err);
+    });
+};
+fetchData(url);
+fetchData("https://jsonplaceholder.typicode.com/posts");
+
+// try and catch block
+try {
+    console.log(retrr);
+} catch (error) {
+    console.log(error);
+};
+
+
+//async / await
+// const getData = (site) => {
+    try {
+
+    } catch (error) {
+        console.log(error);
+    }
+// };
+
+// aysnc await
+const getData = async (site) => {
+    try {
+        const Response = await fetch(site);
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+};
+getData(url);
+
+// storage api 
+// local storage - setItem, getItem, removeItem, clear, length
+localStorage.setItem("name", "ola ola");
+localStorage.setItem("token", "24364784");
+
+const result = localStorage.getItem("name");
+console.log(result);
+
+localStorage.removeItem("token");
+const len = localStorage.length;
+console.log(len);
+// localStorage.clear)()
+
+ 
